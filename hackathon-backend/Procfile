@@ -1,1 +1,1 @@
-web: cd hackathon-backend && npm start
+server: cd hackathon-backend && npm start
