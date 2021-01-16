@@ -8,12 +8,12 @@ const port = process.env.PORT || 3001
 
 const SELECT_ALL_QUERY = 'SELECT * FROM mcit_alum_database';
 
-// const connection = mysql.createConnection({
-//   host: "us-cdbr-east-03.cleardb.com",
-//   user: "ba6481c1132e15",
-//   password: "37d3184d",
-//   database: "heroku_bc546d54c5ccb15"
-// });
+const connection = mysql.createConnection({
+  host: "us-cdbr-east-03.cleardb.com",
+  user: "ba6481c1132e15",
+  password: "37d3184d",
+  database: "heroku_bc546d54c5ccb15"
+});
 
 connection.connect(err => {
 	if(err) {
